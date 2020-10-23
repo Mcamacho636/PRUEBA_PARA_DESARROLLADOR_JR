@@ -51,8 +51,7 @@ class ClientController extends Controller
         $cliente->subject = $request->input('subject');
         $cliente->save();
 
-        //Send Email
-        Mail::to('mcamacho3@ucol.mx')->send(new Mail($message));
+        
     }
 
     /**
